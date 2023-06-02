@@ -1,20 +1,16 @@
-import java.util.*;
-public class Program201{
-public static void main(String args[])
-{
-Scanner sc=new Scanner(System.in);
-int n;
-System.out.println("Enter the Number":);
-n=sc.nextInt();
-if(n%2==0)
-{
-System.out.println("Even\n");
-System.out.println(n+"is Even\n");
+class A{
+public void funA1(){
+System.out.print("FunA1 called from class A");
 }
-else 
-{
-System.out.println("odd\n");
-System.out.println(n+"is odd\n");
+public void funA2(){
+System.out.print("FunA2 called from class A2");
 }
+}
+class B
+{
+public static void main(String args[]){
+A ob=new A();
+ob.funA1();
+ob.funA2();
 }
 }
