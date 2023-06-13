@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Main{
+class FibonacciSeries{
 public static void main(String args[]){
 Scanner sc=new Scanner(System.in);
 int sum=0,n;
@@ -11,6 +11,9 @@ System.out.println("Fibonacci series:");
 while(sum<=n)
 {
 System.out.print(sum+" ");
+a=b;
+b=sum;
+sum=a+b;
 }
 }
 }
